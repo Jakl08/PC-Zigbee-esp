@@ -1,0 +1,5 @@
+.card { transition: transform 0.2s; }
+.card:hover { transform: scale(1.02); }
+.status-indicator { font-weight: bold; }
+.text-on { color: #198754; }
+.text-off { color: #dc3545 }

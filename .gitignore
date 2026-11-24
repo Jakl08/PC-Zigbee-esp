@@ -1,0 +1,26 @@
+# ESP-IDF build artifacts
+/HA_on_off_switch/build/
+/HA_on_off_switch/managed_components/
+/HA_on_off_switch/sdkconfig.old
+
+# Local configuration and editor settings
+.env
+.env.*
+!.env.example
+.vscode/
+
+# Local data and generated Python files
+/files/LXC/status_api/status.db
+__pycache__/
+*.py[cod]
+
+# KiCad local settings and lock files
+*.kicad_prl
+*.lck
+*-backups/
+fp-info-cache
+
+# Backup and generated files
+/Platine/Symbol_Bibliothek.bak
+/DRC.rpt
+*.bak

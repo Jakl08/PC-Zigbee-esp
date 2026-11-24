@@ -1,0 +1,28 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Seite-1" id="OJ3EcBb_-7c96FayzFtK">
+    <mxGraphModel dx="1386" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hpVOvM8JcislLN0EdoRj-65" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;FastAPI Web-Dashboard&lt;/b&gt;&lt;br&gt;(Domain aus .env)" vertex="1">
+          <mxGeometry height="80" width="200" x="90" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hpVOvM8JcislLN0EdoRj-66" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;Hardware-Controller&lt;/b&gt;&lt;br&gt;(Raspberry Pi / ESP32-C6)" vertex="1">
+          <mxGeometry height="80" width="200" x="450" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hpVOvM8JcislLN0EdoRj-67" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;b&gt;PC-Hardware&lt;/b&gt;&lt;br&gt;- Power-Button (Relais)&lt;br&gt;- Power-LED (Status-Pin)" vertex="1">
+          <mxGeometry height="80" width="200" x="450" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="hpVOvM8JcislLN0EdoRj-68" edge="1" parent="1" source="hpVOvM8JcislLN0EdoRj-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;strokeWidth=2;labelBackgroundColor=#ffffff;" target="hpVOvM8JcislLN0EdoRj-66" value="API Polling (30s) &amp; Sync">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hpVOvM8JcislLN0EdoRj-69" edge="1" parent="1" source="hpVOvM8JcislLN0EdoRj-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" target="hpVOvM8JcislLN0EdoRj-67" value="Relais schalten&lt;br&gt;(LOW-Trigger)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hpVOvM8JcislLN0EdoRj-70" edge="1" parent="1" source="hpVOvM8JcislLN0EdoRj-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" target="hpVOvM8JcislLN0EdoRj-67" value="Status prüfen&lt;br&gt;(3,3V)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
